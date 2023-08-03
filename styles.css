@@ -1,0 +1,145 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Paleblue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    max-height: 700px;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+}
+.content{
+    padding: 0px 40px 20px 40px;
+}
+
+.text > h2, p{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.text > p {
+    color: var(--Desaturatedblue);
+    font-size: 14px;
+    margin-top: 10px;
+}
+.text > h2{
+    padding-top:8px;
+    color: var(--Darkblue);
+    font-weight: 900;
+    margin-bottom: 5px;
+ }
+
+.Plan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: var(--Verypaleblue);
+    margin-top: 5px;
+    margin-bottom:5px;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Plan > p, #text {
+    color: var(--Desaturatedblue);
+}
+#text{
+    margin-top: 0px;
+    
+}
+.Plan > #text{
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: var(--Brightblue);
+    font-weight: 600;
+    padding-left: 40px;
+}
+    .Plan > #text:hover {
+        text-decoration: none;
+        color: hsl(244, 82%, 68%);
+    }
+#annual{
+    font-weight: 700;
+    margin-bottom:3px;
+    color: var(--Darkblue);
+}
+.hero{
+    width: 370px;
+    border-radius: 22px 22px 0px 0px;
+    margin: 0;
+}
+.music {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.amount{
+    padding-left: 5px;
+    font-size: 14px;
+    
+}
+
+.payments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.payments > button{
+    width: 100%;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.payment {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--Brightblue);
+    border: 5px solid var(--Brightblue);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+    .payment:hover {
+        background-color: hsl(244, 82%, 68%);
+        border: 5px solid hsl(244, 82%, 68%);
+        cursor: pointer;
+    }
+.cancel {
+    margin: 20px 20px 10px 20px;
+    text-decoration: none;
+    color: var(--Desaturatedblue);
+    font-size: 14px;
+    font-weight: 600;
+}
+.cancel:hover{
+    color: var(--Darkblue);
+}
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
