@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: url(images/pattern-background-desktop.svg) repeat-x top;
     background-color: var(--Paleblue);
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
@@ -140,6 +141,10 @@ main {
 .cancel:hover{
     color: var(--Darkblue);
 }
-    .attribution a {
-        color: hsl(228, 45%, 44%);
+@media (max-width: 380px){
+    body {
+        background: url(images/pattern-background-mobile.svg) repeat-x top;
+        background-color: var(--Paleblue);
     }
+}
+    
